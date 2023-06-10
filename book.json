@@ -24,7 +24,7 @@
     ],
     "pluginsConfig": {
         "favicon-absolute": {
-            "favicon": "http://cos.gatesma.cn/favicon.ico",
+            "favicon": "./img/favicon.ico",
             "appleTouchIconPrecomposed152": "http://cos.gatesma.cn/engineer.png"
         },
         "toc": {

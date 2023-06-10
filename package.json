@@ -1,0 +1,53 @@
+{
+  "name": "my_realm",
+  "version": "1.0.0",
+  "private": true,
+  "title": "牛马程序员",
+  "description": "三更灯火五更鸡，正是男儿读书时",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-audio_image": "^0.0.7",
+    "gitbook-plugin-baidu-tongji-with-multiple-channel": "^0.1.0",
+    "gitbook-plugin-chart": "^0.2.2",
+    "gitbook-plugin-code": "^0.1.0",
+    "gitbook-plugin-copyright": "^0.4.1",
+    "gitbook-plugin-diff": "^0.1.0",
+    "gitbook-plugin-donate": "^1.0.2",
+    "gitbook-plugin-edit-link-plus": "^0.1.1",
+    "gitbook-plugin-expandable-chapters-small": "^0.1.7",
+    "gitbook-plugin-favicon-absolute": "^0.1.1",
+    "gitbook-plugin-github-buttons": "^3.0.0",
+    "gitbook-plugin-google-tongji-with-multiple-channel": "^0.1.0",
+    "gitbook-plugin-hide-element": "^0.0.4",
+    "gitbook-plugin-icp": "^0.1.2",
+    "gitbook-plugin-mermaid-gb3": "^2.1.0",
+    "gitbook-plugin-mygitalk": "^0.2.6",
+    "gitbook-plugin-rss": "^3.0.2",
+    "gitbook-plugin-search-plus": "^1.0.3",
+    "gitbook-plugin-sharing-plus": "^0.0.2",
+    "gitbook-plugin-simple-mind-map": "^0.2.4",
+    "gitbook-plugin-sitemap-general": "^0.1.1",
+    "gitbook-plugin-splitter": "^0.0.8",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-toc": "0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build",
+    "deploy": "./deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatesma/my_realm"
+  },
+  "author": "snowdreams1006",
+  "language": "zh-hans",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gatesma/my_realm/issues"
+  },
+  "homepage": "https://github.com/gatesma/my_realm#readme"
+}

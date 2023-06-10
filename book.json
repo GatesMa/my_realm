@@ -1,0 +1,96 @@
+{
+    "title": "牛马程序员",
+    "author": "爆龙战士",
+    "description": "三更灯火五更鸡，正是男儿读书时",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "links": {
+        "sidebar": {
+            "my site": "http://gatesma.cn"
+        }
+    },
+    "plugins": [
+        "favicon-absolute",
+        "toc",
+        "github-buttons",
+        "-sharing",
+        "sharing-plus",
+        "edit-link-plus",
+        "chart",
+        "code",
+        "advanced-emoji",
+        "copyright",
+        "donate"
+    ],
+    "pluginsConfig": {
+        "favicon-absolute": {
+            "favicon": "/favicon.ico",
+            "appleTouchIconPrecomposed152": "/engineer.png"
+        },
+        "toc": {
+            "addClass": true,
+            "className": "toc"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "gatesma",
+                "repo": "my_realm",
+                "type": "star",
+                "size": "small"
+            }]
+        },
+        "sharing": {
+            "douban": true,
+            "facebook": false,
+            "google": false,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": false,
+            "messenger": false,
+            "pocket": false,
+            "qq": true,
+            "qzone": true,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper", "linkedin",
+                "pocket", "stumbleupon"
+            ]
+        },
+        "edit-link-plus": {
+            "base": {
+                "snowdreams1006.github.io":"https://github.com/gatesma/my_realm/edit/master"
+            },
+            "defaultBase": "https://github.com/gatesma/my_realm/edit/master",
+            "label": "编辑本页"
+        },
+        "chart": {
+            "type": "c3"
+        },
+
+        "sitemap-general": {
+            "prefix": "http://gatesma.cn/"
+        },
+        "copyright": {
+            "site": "http://gatesma.cn/",
+            "author": "爆龙战士",
+            "website": "牛马程序员",
+            "image": "-",
+            "copyProtect": false
+        },
+        "donate": {
+            "wechat": "/wechat-donate.png",
+            "alipay": "/alipay-donate.png",
+            "title": "",
+            "button": "赏",
+            "alipayText": "支付宝",
+            "wechatText": "微信"
+        }
+    }
+}

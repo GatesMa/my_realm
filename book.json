@@ -15,13 +15,13 @@
         "github-buttons",
         "-sharing",
         "sharing-plus",
-        "chart",
         "code",
         "advanced-emoji",
         "copyright",
         "donate",
         "expandable-chapters-small",
-        "page-toc"
+        "page-toc",
+        "tbfed-pagefooter"
     ],
     "pluginsConfig": {
         "favicon-absolute": {
@@ -64,20 +64,6 @@
                 "pocket", "stumbleupon"
             ]
         },
-        "edit-link-plus": {
-            "base": {
-                "gatesma.github.io":"https://github.com/gatesma/my_realm/edit/master"
-            },
-            "defaultBase": "https://github.com/gatesma/my_realm/edit/master",
-            "label": "编辑本页"
-        },
-        "chart": {
-            "type": "c3"
-        },
-
-        "sitemap-general": {
-            "prefix": "https://gatesma.github.io/my_realm/"
-        },
         "copyright": {
             "site": "https://gatesma.github.io/my_realm/",
             "author": "爆龙战士",
@@ -97,6 +83,11 @@
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
             "position": "before-first",
             "showByDefault": true
+        },
+        "tbfed-pagefooter": {
+            "copyright": "",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
         }
     }
 }

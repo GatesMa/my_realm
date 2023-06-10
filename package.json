@@ -34,7 +34,7 @@
     "gitbook-plugin-simple-mind-map": "^0.2.4",
     "gitbook-plugin-sitemap-general": "^0.1.1",
     "gitbook-plugin-splitter": "^0.0.8",
-    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "gitbook-plugin-tbfed-pagefooter": "0.0.1",
     "gitbook-plugin-toc": "0.0.2",
     "gitbook-plugin-toggle-chapters": "0.0.3"
   },

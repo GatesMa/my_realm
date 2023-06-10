@@ -1,4 +1,4 @@
-# gitbook 入门教程（gitbook-cli版）
+# gitbook 入门教程
 
 ## 1. 前置知识
 
@@ -43,8 +43,8 @@ gitbook --version
 ```
 npm install -g gitbook-cli
 ```
-
-#### 如果出现：TypeError: cb.apply is not a function
+#### !!!常见错误!!!
+**如果出现：TypeError: cb.apply is not a function**
 
 需要切换node的低版本，推荐使用nvm工具管理node版本:
 
@@ -55,7 +55,7 @@ nvm install 12.16.3
 nvm use 12.16.3
 ```
 
-#### 如果出现 MaxListenersExceededWarning: Possible EventEmitter memory leak detected.
+**如果出现 MaxListenersExceededWarning: Possible EventEmitter memory leak detected.**
 
 没有啥影响，执行npm安装命令有点慢，让子弹飞一会即可
 
@@ -125,16 +125,6 @@ gitbook serve
   "description": ""
 ```
 
-#### `isbn` 国际标准书号
-
-> 书籍的国际标准书号
-
-示例:
-
-```
-  "isbn": ""
-```
-
 > 选填,请参考 [ISBN Search](https://isbnsearch.org/)
 
 #### `language` 语言
@@ -151,35 +141,7 @@ en, ar, bn, cs, de, en, es, fa, fi, fr, he, it, ja, ko, no, pl, pt, ro, ru, sv, 
 "language": "zh-hans"
 ```
 
-#### `direction` 阅读顺序
 
-> 阅读顺序,支持从右到左(`rtl`)或从左到右(`ltr`),默认值取决于语言值.
-
-示例:
-
-```
-"direction" : "ltr"
-```
-
-#### `gitbook` 版本
-
-> 指定 `gitbook` 版本,支持[SemVer规范](http://semver.org/),接受类似于 `>=3.2.3` 的条件.
-
-示例:
-
-```
-"gitbook": "3.2.3"
-```
-
-#### `root` 根目录
-
-> 指定存放 `gitbook` 文件(除了`book.json`文件本身)的根目录
-
-示例:
-
-```
-"root": "."
-```
 
 #### `links` 侧边栏链接
 
@@ -211,7 +173,7 @@ en, ar, bn, cs, de, en, es, fa, fi, fr, he, it, ja, ko, no, pl, pt, ro, ru, sv, 
 }
 ```
 
-#### `plugins` 插件
+#### 【重要】`plugins` 插件
 
 > 配置额外的插件列表,添加新插件项后需要运行 `gitbook install` 安装到当前项目.
 
@@ -248,7 +210,7 @@ en, ar, bn, cs, de, en, es, fa, fi, fr, he, it, ja, ko, no, pl, pt, ro, ru, sv, 
 ]
 ```
 
-#### `pluginsConfig` 插件配置
+#### 【重要】 `pluginsConfig` 插件配置
 
 > 安装插件的相应配置项,具体有哪些配置项是由插件本身提供的,应访问插件官网进行查询.
 
@@ -259,33 +221,3 @@ en, ar, bn, cs, de, en, es, fa, fi, fr, he, it, ja, ko, no, pl, pt, ro, ru, sv, 
     }
 }
 ```
-
-#### `structure` 目录结构配置
-
-> 指定`README.md`,`SUMMARY.md`,`GLOSSARY.md` 和 `LANGS.md` **文件名称**.
-
-
-| 配置项                | 描述                                      |
-| --------------------- | ----------------------------------------- |
-| `structure.readme`    | `readme` 文件名(默认值是 `README.md`)     |
-| `structure.summary`   | `summary` 文件名(默认值是 `SUMMARY.md`)   |
-| `structure.glossary`  | `glossary` 文件名(默认值是 `GLOSSARY.md`) |
-| `structure.languages` | `languages` 文件名(默认值是 `LANGS.md`)   |
-
-#### `pdf` 配置
-
-> 定制 `pdf` 输出格式,可能需要安装 `ebook-convert` 等相关插件
-
-
-| 配置项              | 描述                                                                                                               |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `pdf.pageNumbers`   | 添加页码(默认值是`true` )                                                                                          |
-| `pdf.fontSize`      | 字体大小(默认值是`12` )                                                                                            |
-| `pdf.fontFamily`    | 字体集(默认值是`Arial` )                                                                                           |
-| `pdf.paperSize`     | 页面尺寸(默认值是`a4` ),支持`a0`,`a1`,`a2`,`a3`,`a4`,`a5`,`a6`,`b0`,`b1`,`b2`,`b3`,`b4`,`b5`,`b6`,`legal`,`letter` |
-| `pdf.margin.top`    | 上边界(默认值是`56` )                                                                                              |
-| `pdf.margin.bottom` | 下边界(默认值是`56` )                                                                                              |
-| `pdf.margin.left`   | 左边界(默认值是`62` )                                                                                              |
-| `pdf.margin.right`  | 右边界(默认值是`62` )                                                                                              |
-
-> 电子书封面照片 `cover.jpg` 和 `cover_small.jpg`,后续会详细说明.

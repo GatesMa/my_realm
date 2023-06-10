@@ -36,3 +36,5 @@
   </p>
 </p>
 <p align="center">考虑<a href="./wechat-donate.png" target="_blank">捐赠</a>来帮助我财务自由</p>
+
+<p align="center">项目主页： http://wiki.gatesma.cn/my_realm</p>

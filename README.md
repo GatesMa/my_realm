@@ -40,5 +40,4 @@
 </p>
 <p align="center">考虑<a href="http://cos.gatesma.cn/wechat-donate.png" target="_blank">捐赠</a>来帮助我财务自由</p>
 
-<p align="center">地址一： https://wiki.realm.gatesma.cn/</p>
-<p align="center">地址二： https://gatesma.github.io/my_realm/</p>
+<p align="center"><a href="https://wiki.realm.gatesma.cn/">地址一</a> <a href="https://gatesma.github.io/my_realm/">地址二</a></p>

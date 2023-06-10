@@ -16,6 +16,7 @@
     "gitbook-plugin-diff": "^0.1.0",
     "gitbook-plugin-donate": "^1.0.2",
     "gitbook-plugin-edit-link-plus": "^0.1.1",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
     "gitbook-plugin-expandable-chapters-small": "^0.1.7",
     "gitbook-plugin-favicon-absolute": "^0.1.1",
     "gitbook-plugin-github-buttons": "^3.0.0",
@@ -31,7 +32,8 @@
     "gitbook-plugin-sitemap-general": "^0.1.1",
     "gitbook-plugin-splitter": "^0.0.8",
     "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
-    "gitbook-plugin-toc": "0.0.2"
+    "gitbook-plugin-toc": "0.0.2",
+    "gitbook-plugin-toggle-chapters": "0.0.3"
   },
   "devDependencies": {},
   "scripts": {

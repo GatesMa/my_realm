@@ -20,7 +20,8 @@
         "code",
         "advanced-emoji",
         "copyright",
-        "donate"
+        "donate",
+        "expandable-chapters-small"
     ],
     "pluginsConfig": {
         "favicon-absolute": {

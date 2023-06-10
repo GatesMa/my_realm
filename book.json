@@ -24,8 +24,8 @@
     ],
     "pluginsConfig": {
         "favicon-absolute": {
-            "favicon": "http://cos.gatesma.cn/favicon.ico",
-            "appleTouchIconPrecomposed152": "http://cos.gatesma.cn/engineer.png"
+            "favicon": "./img/favicon.ico",
+            "appleTouchIconPrecomposed152": "./img/engineer.png"
         },
         "toc": {
             "addClass": true,
@@ -81,12 +81,12 @@
             "site": "https://gatesma.github.io/my_realm/",
             "author": "爆龙战士",
             "website": "牛马程序员",
-            "image": "http://cos.gatesma.cn/wechat-opening.png",
+            "image": "./img/wechat-opening.png",
             "copyProtect": false
         },
         "donate": {
-            "wechat": "http://cos.gatesma.cn/wechat-donate.png",
-            "alipay": "http://cos.gatesma.cn/alipay-donate.png",
+            "wechat": "./img/wechat-donate.png",
+            "alipay": "./img/alipay-donate.png",
             "title": "",
             "button": "赏",
             "alipayText": "支付宝",

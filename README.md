@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="./img/mbg.jpg" align="center" alt="gatesma's github logo" />
+ <img width="100px" src="http://cos.gatesma.cn/mbg.jpg" align="center" alt="gatesma's github logo" />
  <h1 align="center">牛马程序员</h1>
  <p align="center">三更灯火五更鸡，正是男儿读书时</p>
 </p>

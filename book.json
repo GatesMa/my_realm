@@ -6,7 +6,7 @@
     "gitbook": "3.2.3",
     "links": {
         "sidebar": {
-            "my site": "http://gatesma.cn"
+            "简陋的主页": "http://gatesma.cn"
         }
     },
     "plugins": [

@@ -75,10 +75,10 @@
         },
 
         "sitemap-general": {
-            "prefix": "http://gatesma.cn/"
+            "prefix": "https://gatesma.github.io/my_realm/"
         },
         "copyright": {
-            "site": "http://gatesma.cn/",
+            "site": "https://gatesma.github.io/my_realm/",
             "author": "爆龙战士",
             "website": "牛马程序员",
             "image": "/wechat-opening.png",

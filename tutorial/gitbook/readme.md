@@ -112,7 +112,7 @@ gitbook serve
 示例:
 
 ```
-作者"author": "snowdreams1006"
+作者"author": "gatesma"
 ```
 
 #### `description` 描述

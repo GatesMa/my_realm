@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="./mbg.jpg" align="center" alt="snowdreams1006's github logo" />
+ <img width="100px" src="./mbg.jpg" align="center" alt="gatesma's github logo" />
  <h1 align="center">牛马程序员</h1>
  <p align="center">三更灯火五更鸡，正是男儿读书时</p>
 </p>
@@ -37,4 +37,4 @@
 </p>
 <p align="center">考虑<a href="./wechat-donate.png" target="_blank">捐赠</a>来帮助我财务自由</p>
 
-<p align="center">项目主页： http://wiki.gatesma.cn/my_realm</p>
+<p align="center">项目主页： https://wiki.realm.gatesma.cn/</p>

@@ -65,7 +65,7 @@
         },
         "edit-link-plus": {
             "base": {
-                "snowdreams1006.github.io":"https://github.com/gatesma/my_realm/edit/master"
+                "gatesma.github.io":"https://github.com/gatesma/my_realm/edit/master"
             },
             "defaultBase": "https://github.com/gatesma/my_realm/edit/master",
             "label": "编辑本页"

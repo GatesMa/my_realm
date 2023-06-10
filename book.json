@@ -20,7 +20,8 @@
         "advanced-emoji",
         "copyright",
         "donate",
-        "expandable-chapters-small"
+        "expandable-chapters-small",
+        "page-toc"
     ],
     "pluginsConfig": {
         "favicon-absolute": {
@@ -91,6 +92,11 @@
             "button": "赏",
             "alipayText": "支付宝",
             "wechatText": "微信"
+        },
+        "page-toc": {
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+            "position": "before-first",
+            "showByDefault": true
         }
     }
 }

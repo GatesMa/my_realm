@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06942f9c-b69f-45bf-9b6b-0694af4cb9f8" name="Changes" comment="add docs">
+      <change afterPath="$PROJECT_DIR$/learn-note/go/basic/assets/modules_img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-note/go/basic/assets/moudles_img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-note/go/basic/assets/moudles_img3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/tutorial/gitbook/readme.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/tutorial/gitbook/readme.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-note/go/basic/moudules.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/go/basic/moudules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +86,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn-note/go/basic/assets" />
       <recent name="$PROJECT_DIR$/img" />
     </key>
   </component>

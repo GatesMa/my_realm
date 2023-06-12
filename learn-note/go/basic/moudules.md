@@ -92,14 +92,14 @@ GOPROXY 的值是一个以英文逗号 “,” 分割的 Go 模块代理列表�
 
 它的值是一个 Go checksum database，用于在拉取模块版本时（无论是从源站拉取还是通过 Go module proxy 拉取）保证拉取到的模块版本数据未经过篡改，若发现不一致，也就是可能存在篡改，将会立即中止。
 
-GOSUMDB 的默认值为：`<span class="ne-text">sum.golang.org</span>`，在国内也是无法访问的，但是 GOSUMDB 可以被 Go 模块代理所代理（详见：Proxying a Checksum Database）。
+GOSUMDB 的默认值为：`sum.golang.org`，在国内也是无法访问的，但是 GOSUMDB 可以被 Go 模块代理所代理（详见：Proxying a Checksum Database）。
 
 因此我们可以通过设置 GOPROXY 来解决，而先前我们所设置的模块代理 `goproxy.cn` 就能支持代理 `sum.golang.org`，所以这一个问题在设置 GOPROXY 后，你可以不需要过度关心。
 
 另外若对 GOSUMDB 的值有自定义需求，其支持如下格式：
 
-* **格式 1：**`<span class="ne-text"><SUMDB_NAME>+<PUBLIC_KEY></span>`。
-* **格式 2：**`<span class="ne-text"><SUMDB_NAME>+<PUBLIC_KEY> <SUMDB_URL></span>`。
+* **格式 1：**`<SUMDB_NAME>+<PUBLIC_KEY>`。
+* **格式 2：**`<SUMDB_NAME>+<PUBLIC_KEY> <SUMDB_URL>`。
 
 **也可以将其设置为“off”，也就是禁止 Go 在后续操作中校验模块版本。**
 

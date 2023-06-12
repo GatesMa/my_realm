@@ -11,7 +11,7 @@ rm -rf docs/
 gitbook build
 
 # copy to docs
-cp -rf _book/ docs/
+mv _book/ docs/
 
 # add commits
 git add .

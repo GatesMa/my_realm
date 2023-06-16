@@ -13,12 +13,13 @@
 ## 学习笔记
 
 * [go 学习笔记](learn-note/go/readme.md)
-  * [go 基础](learn-note/go/basic/readme.md)
+  * [go 重点基础](learn-note/go/basic/readme.md)
     * [1. Golang项目依赖Go modules](learn-note/go/basic/moudules.md)
 
 * [php 学习笔记](learn-note/php/readme.md)
   * [php 基础](learn-note/php/basic/readme.md)
-    * [1. php是什么以及运行原理](learn-note/php/basic/Chapter1/readme.md)
+    * [【TODO】PHP 基基基础](learn-note/php/basic/1.md)
+    * [Composer](learn-note/php/basic/composer.md)
 
 ## 入门教程
 

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Composer 基本教程 · 牛马程序员</title>
+        <title>【TODO】PHP Web 框架解析、高阶 · 牛马程序员</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -83,10 +83,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="autoload.html" />
+    <link rel="next" href="../../../tutorial/gitbook/readme.html" />
     
     
-    <link rel="prev" href="readme.html" />
+    <link rel="prev" href="basic.html" />
     
 
     <style>
@@ -249,7 +249,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.2.1.1" data-path="composer.html">
+        <li class="chapter " data-level="2.2.1.1" data-path="composer.html">
             
                 <a href="composer.html">
             
@@ -301,7 +301,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.1.5" data-path="advance.html">
+        <li class="chapter active" data-level="2.2.1.5" data-path="advance.html">
             
                 <a href="advance.html">
             
@@ -374,7 +374,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Composer 基本教程</a>
+        <a href="../../.." >【TODO】PHP Web 框架解析、高阶</a>
     </h1>
 </div>
 
@@ -389,66 +389,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="composer">Composer</h1>
-<h2 id="1-composer-&#x662F;&#x4EC0;&#x4E48;">1. composer &#x662F;&#x4EC0;&#x4E48;</h2>
-<p>composer&#x662F; PHP &#x7528;&#x6765;&#x7BA1;&#x7406;&#x4F9D;&#x8D56;&#xFF08;dependency&#xFF09;&#x5173;&#x7CFB;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x58F0;&#x660E;&#x6240;&#x4F9D;&#x8D56;&#x7684;&#x5916;&#x90E8;&#x5DE5;&#x5177;&#x5E93;&#xFF08;libraries&#xFF09;&#xFF0C;composer &#x4F1A;&#x5E2E;&#x4F60;&#x5B89;&#x88C5;&#x8FD9;&#x4E9B;&#x4F9D;&#x8D56;&#x7684;&#x5E93;&#x6587;&#x4EF6;&#x3002;</p>
+                                <p>// &#x9B54;&#x672F;&#x51FD;&#x6570; : <strong>set </strong>get <strong>call </strong>callStatic
+// &#x6784;&#x9020;&#x51FD;&#x6570; &#x6784;&#x9020;&#x5668; &#x7C7B;&#x6BCF;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x6B21; &#x6784;&#x9020;&#x51FD;&#x6570;&#x81EA;&#x52A8;&#x88AB;&#x8C03;&#x7528;</p>
+<p><strong>&#x81EA;&#x52A8;&#x8C03;&#x7528;</strong></p>
+<p>&#x7C7B;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x5668;
+spl_autoload_register
+__autoload
+composer &#x6846;&#x67B6;&#x4E2D;&#x7684;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;
+<a href="https://learnku.com/articles/62233" target="_blank">https://learnku.com/articles/62233</a>
+<a href="https://juejin.cn/post/6844904180851671054" target="_blank">https://juejin.cn/post/6844904180851671054</a>
+<a href="https://www.getyii.com/topic/697" target="_blank">https://www.getyii.com/topic/697</a>
+<a href="https://www.daijulong.com/course/composer/autoload-classmap.html" target="_blank">https://www.daijulong.com/course/composer/autoload-classmap.html</a>
+<a href="https://chebincarl.github.io/2020/05/19/PHP-Composer%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/" target="_blank">https://chebincarl.github.io/2020/05/19/PHP-Composer%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/</a></p>
+<p>PHP namespace&#x3001;require&#x3001;use&#x533A;&#x522B;
+<a href="https://www.jianshu.com/p/2f8a5e7d43cd" target="_blank">https://www.jianshu.com/p/2f8a5e7d43cd</a></p>
+<p>namespace &#x89E3;&#x51B3;&#x91CD;&#x540D;&#x95EE;&#x9898;
+use &#x4EC5;&#x7528;&#x4E8E;&#x7B80;&#x5199;&#x7C7B;&#x540D;
+require &#x624D;&#x80FD;&#x771F;&#x6B63;&#x5BFC;&#x5165;&#x7C7B;</p>
+<p>&#x540E;&#x671F;&#x9759;&#x6001;&#x7ED1;&#x5B9A; self static</p>
 <ul>
-<li>php &#x5305;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;&#x5DE5;&#x5177;</li>
-<li>&#x5305;: &#x7EC4;&#x4EF6;,&#x4E00;&#x7EC4;&#x76F8;&#x5173;&#x7684;&#x7C7B;,&#x63A5;&#x53E3;,trait &#x7684;&#x7ED3;&#x5408;&#x4F53;</li>
-<li>&#x4F9D;&#x8D56;: A -&gt; B -&gt; C -&gt; D</li>
-<li>composer &#x5C31;&#x662F;&#x7528; php &#x8BED;&#x8A00;&#x5F00;&#x53D1;&#x7684;</li>
-</ul>
-<h2 id="2-&#x7EC4;&#x4EF6;&#x653E;&#x5728;&#x4E86;&#x54EA;&#x91CC;">2. &#x7EC4;&#x4EF6;&#x653E;&#x5728;&#x4E86;&#x54EA;&#x91CC;</h2>
-<ul>
-<li>github.com, gitee.com</li>
-<li>&#x67E5;&#x8BE2;&#x5E73;&#x53F0;: <a href="https://packagist.org" target="_blank">https://packagist.org</a></li>
-</ul>
-<h2 id="3-&#x4ECE;&#x54EA;&#x4E0B;&#x8F7D;">3. &#x4ECE;&#x54EA;&#x4E0B;&#x8F7D;</h2>
-<ul>
-<li>&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;:<a href="https://getcomposer.org/" target="_blank">https://getcomposer.org/</a></li>
-<li>&#x4E2D;&#x6587;&#x7F51;: <a href="https://www.phpcomposer.com/" target="_blank">https://www.phpcomposer.com/</a></li>
-</ul>
-<h2 id="4-windows-&#x4E0B;&#x8F7D;">4. windows &#x4E0B;&#x8F7D;</h2>
-<p><code>&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;https://getcomposer.org/download/</code></p>
-<ul>
-<li>&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;: <a href="https://getcomposer.org/composer.phar" target="_blank">https://getcomposer.org/composer.phar</a></li>
-<li>&#x5C06; php.exe &#x6240;&#x5728;&#x8DEF;&#x5F84;&#x6DFB;&#x52A0;&#x5230;&#x5168;&#x5C40; path &#x53D8;&#x91CF;&#x4E2D;</li>
-<li>&#x5C06;&#x4E0B;&#x8F7D;&#x7684; composer.phar &#x590D;&#x5236;&#x5230; php.exe &#x6240;&#x5728;&#x76EE;&#x5F55;&#x4E2D;</li>
-<li><p>&#x521B;&#x5EFA; composer.bat:<code>@php &quot;%~dp0composer.phar&quot; %*</code></p>
+<li>php&#x91CD;&#x8F7D; &#x5C5E;&#x6027;&#xFF0C;  &#x662F;&#x6307;&#x52A8;&#x6001;&#x5730;&#x521B;&#x5EFA;&#x7C7B;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x6211;&#x4EEC;&#x662F;&#x901A;&#x8FC7;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#xFF08;magic methods&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#x7684;&#x3002; <strong>get </strong>set <strong>callStatic </strong>call</li>
+<li>&#x5373;&#x65F6;&#x4E0D;&#x5B9E;&#x73B0; <strong>set </strong>get &#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x8BBE;&#x7F6E;&#x548C;&#x8BBF;&#x95EE;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x3002;&#x4F46;&#x662F;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E;&#x548C;&#x8BBF;&#x95EE;&#x79C1;&#x6709;&#x5C5E;&#x6027; private</li>
+<li>&#x8BBF;&#x95EE;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x8005;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x65F6;&#x5019;&#x624D;&#x4F1A;&#x8C03;&#x7528; <strong>get </strong>set&#x3002;&#x5982;&#x679C;&#x63D0;&#x524D;&#x4F7F;&#x7528; $c-&gt;age = 20; &#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x90A3;&#x4E48; echo $c-&gt;age; &#x4E0D;&#x4F1A;&#x8D70;__get&#x65B9;&#x6CD5;</li>
+<li><p>&#x65B9;&#x6CD5;&#x62E6;&#x622A;&#x5668; &#x5F53;&#x8BBF;&#x95EE;&#x5F53;&#x524D;&#x7C7B;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#x6216;&#x8005;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#x65B9;&#x6CD5;&#x65F6; &#x4F1A;&#x8C03;&#x7528;&#x9B54;&#x672F;&#x65B9;&#x6CD5; <strong>call   </strong>callStatic</p>
 </li>
-<li><p>php composer.phar -V</p>
+<li><p>&#x4E8B;&#x4EF6;&#x59D4;&#x6258; &#x8BF7;&#x6C42;&#x59D4;&#x6258;  &#x8BBF;&#x95EE;&#x7C7B;&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x6210;&#x8FDC;&#x65B9;&#x6CD5;&#xFF0C;&#x4F1A;&#x88AB;&#x9B54;&#x672F;&#x65B9;&#x6CD5;&#x62E6;&#x622A;&#xFF0C;&#x5C06;&#x8BF7;&#x6C42;&#x91CD;&#x5B9A;&#x5411;&#x7ED9;&#x6216;&#x8005;&#x59D4;&#x6258;&#x7ED9;&#x522B;&#x7684;&#x5BF9;&#x8C61;&#x6210;&#x5458;&#x65B9;&#x6CD5;&#x7C7B;&#x5904;&#x7406;&#x3002;</p>
 </li>
-<li>&#x7B80;&#x5316;&#x6210;: composer -V</li>
-<li>&#x5C06;&#x955C;&#x50CF;&#x6539;&#x4E3A;&#x56FD;&#x5185;&#x963F;&#x91CC;&#x4E91;:<code>composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/</code></li>
+<li>&#x59D4;&#x6258;&#x662F;&#x6307;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x8F6C;&#x53D1;&#x6216;&#x8005;&#x59D4;&#x6258;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x7ED9;&#x53E6;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x88AB;&#x59D4;&#x6258;&#x7684;&#x4E00;&#x65B9;&#x66FF;&#x539F;&#x5148;&#x5BF9;&#x8C61;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x3002;</li>
+<li>&#x59D4;&#x6258;&#x6BD4;&#x7EE7;&#x627F;&#x66F4;&#x52A0;&#x7075;&#x6D3B;  &#x7236;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#x662F;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;&#x53EA;&#x80FD;&#x5355;&#x7EE7;&#x627F;&#xFF0C;&#x4F46;&#x662F;&#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x59D4;&#x6258;&#x7ED9;&#x591A;&#x4E2A;&#x5BF9;&#x8C61;</li>
 </ul>
-<h2 id="5-&#x5E38;&#x7528;&#x6307;&#x4EE4;">5. &#x5E38;&#x7528;&#x6307;&#x4EE4;</h2>
-<ul>
-<li>composer init</li>
-<li>composer install: &#x5B89;&#x88C5; composer.json &#x4E2D;&#x7684;&#x4F9D;&#x8D56;</li>
-<li>composer update: &#x66F4;&#x65B0;&#x4F9D;&#x8D56; &#x4E0E;lock&#x6587;&#x4EF6;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
-<li>composer dump-autoload: &#x6253;&#x5370;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#x7D22;&#x5F15;</li>
-<li>composer self-update: &#x66F4;&#x65B0; composer &#x7248;&#x672C;</li>
-<li>composer require: &#x6DFB;&#x52A0;&#x4F9D;&#x8D56;&#x5230; composer.json &#x4E2D;</li>
-<li>composer create-project: &#x5B89;&#x88C5;&#x9879;&#x76EE;</li>
-<li>composer config -l -g &#x67E5;&#x770B;composer&#x914D;&#x7F6E;</li>
-<li>composer config -g repo.packagist composer <a href="https://mirrors.aliyun.com/composer/" target="_blank">https://mirrors.aliyun.com/composer/</a> &#x914D;&#x7F6E;&#x4E2D;&#x56FD;&#x955C;&#x50CF;</li>
-</ul>
-<h2 id="6-composer-&#x81EA;&#x52A8;&#x52A0;&#x8F7D;-autoload">6. composer &#x81EA;&#x52A8;&#x52A0;&#x8F7D; autoload</h2>
-<ul>
-<li>&#x6587;&#x4EF6;&#x7EA7;: &quot;files&quot;, &#x9700;&#x8981;&#x5C06;&#x52A0;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#x9010;&#x4E2A;&#x5BFC;&#x5165;</li>
-<li>&#x76EE;&#x5F55;&#x7EA7;: &quot;classmap&quot;,&#x7C7B;&#x76EE;&#x5F55;&#x7684;&#x6620;&#x5C04;</li>
-<li>&#x7A7A;&#x95F4;&#x7EA7;: &quot;psr-4&quot;: &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x6620;&#x5C04;&#x5230;&#x76EE;&#x5F55;</li>
-<li>&#x65E0;&#x8BBA;&#x662F;&#x54EA;&#x4E00;&#x79CD;,&#x6700;&#x540E;&#x90FD;&#x8981;&#x6267;&#x884C;&#x4E00;&#x4E0B;&quot;composer dump&quot;,&#x66F4;&#x65B0; composer.json &#x4E2D;&#x7684; autoload &#x914D;&#x7F6E;&#x9879;</li>
-</ul>
+<p>&#x4ECE;mvc&#x8C08;&#x5230;tp&#x5BB9;&#x5668;&#x5B9E;&#x73B0;&#x539F;&#x7406;&#x3002;&#x95E8;&#x9762;&#x6A21;&#x5F0F;&#x3001;__get
+<a href="https://spaphp.pages.woa.com/chapter1_container.html" target="_blank">https://spaphp.pages.woa.com/chapter1_container.html</a></p>
 <script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
 
 <pre><code class="lang-html">&#x4F5C;&#x8005;: &#x7206;&#x9F99;&#x6218;&#x58EB;
-&#x94FE;&#x63A5;: https://gatesma.github.io/my_realm/learn-note/php/basic/composer.html
+&#x94FE;&#x63A5;: https://gatesma.github.io/my_realm/learn-note/php/basic/advance.html
 &#x6765;&#x6E90;: &#x725B;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;
 &#x672C;&#x6587;&#x539F;&#x521B;&#x53D1;&#x5E03;&#x4E8E;&#x300C;&#x725B;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;&#x300D;,&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;,&#x8C22;&#x8C22;&#x5408;&#x4F5C;!
 </code></pre>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2023-06-17 18:47:06
+2023-06-17 17:55:38
 </span></footer>
                                 
                                 </section>
@@ -476,12 +456,12 @@
 
             
                 
-                <a href="readme.html" class="navigation navigation-prev " aria-label="Previous page: PHP 基础">
+                <a href="basic.html" class="navigation navigation-prev " aria-label="Previous page: 【TODO】PHP 基基基础">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="autoload.html" class="navigation navigation-next " aria-label="Next page: PHP Composer 自动加载介绍">
+                <a href="../../../tutorial/gitbook/readme.html" class="navigation navigation-next " aria-label="Next page: gitbook 入门教程（gitbook-cli版）">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -492,7 +472,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Composer 基本教程","level":"2.2.1.1","depth":3,"next":{"title":"PHP Composer 自动加载介绍","level":"2.2.1.2","depth":3,"path":"learn-note/php/basic/autoload.md","ref":"learn-note/php/basic/autoload.md","articles":[]},"previous":{"title":"PHP 基础","level":"2.2.1","depth":2,"path":"learn-note/php/basic/readme.md","ref":"learn-note/php/basic/readme.md","articles":[{"title":"Composer 基本教程","level":"2.2.1.1","depth":3,"path":"learn-note/php/basic/composer.md","ref":"learn-note/php/basic/composer.md","articles":[]},{"title":"PHP Composer 自动加载介绍","level":"2.2.1.2","depth":3,"path":"learn-note/php/basic/autoload.md","ref":"learn-note/php/basic/autoload.md","articles":[]},{"title":"PSR 规范","level":"2.2.1.3","depth":3,"path":"learn-note/php/basic/psr.md","ref":"learn-note/php/basic/psr.md","articles":[]},{"title":"【TODO】PHP 基基基础","level":"2.2.1.4","depth":3,"path":"learn-note/php/basic/basic.md","ref":"learn-note/php/basic/basic.md","articles":[]},{"title":"【TODO】PHP Web 框架解析、高阶","level":"2.2.1.5","depth":3,"path":"learn-note/php/basic/advance.md","ref":"learn-note/php/basic/advance.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon-absolute","toc","github-buttons","-sharing","sharing-plus","code","advanced-emoji","copyright","donate","expandable-chapters-small","page-toc","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"copyright":{"copyProtect":false,"site":"https://gatesma.github.io/my_realm/","author":"爆龙战士","website":"牛马程序员","image":""},"toc":{"addClass":true,"className":"toc"},"search":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"title":"","button":"赏","wechat":"http://cos.gatesma.cn/wechat-donate.png","alipay":"http://cos.gatesma.cn/alipay-donate.png","wechatText":"微信","alipayText":"支付宝"},"favicon-absolute":{"favicon":"./img/favicon.ico","appleTouchIconPrecomposed152":"http://cos.gatesma.cn/engineer.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"gatesma","repo":"my_realm","type":"star","size":"small"}]},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"爆龙战士","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"牛马程序员","language":"zh-hans","links":{"sidebar":{"简陋的主页":"http://gatesma.cn"}},"gitbook":"3.2.3","description":"三更灯火五更鸡，正是男儿读书时"},"file":{"path":"learn-note/php/basic/composer.md","mtime":"2023-06-17T10:47:06.189Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-17T10:48:41.237Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"【TODO】PHP Web 框架解析、高阶","level":"2.2.1.5","depth":3,"next":{"title":"gitbook 入门教程（gitbook-cli版）","level":"3.1","depth":1,"path":"tutorial/gitbook/readme.md","ref":"tutorial/gitbook/readme.md","articles":[]},"previous":{"title":"【TODO】PHP 基基基础","level":"2.2.1.4","depth":3,"path":"learn-note/php/basic/basic.md","ref":"learn-note/php/basic/basic.md","articles":[]},"dir":"ltr"},"config":{"plugins":["favicon-absolute","toc","github-buttons","-sharing","sharing-plus","code","advanced-emoji","copyright","donate","expandable-chapters-small","page-toc","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"copyright":{"copyProtect":false,"site":"https://gatesma.github.io/my_realm/","author":"爆龙战士","website":"牛马程序员","image":""},"toc":{"addClass":true,"className":"toc"},"search":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"title":"","button":"赏","wechat":"http://cos.gatesma.cn/wechat-donate.png","alipay":"http://cos.gatesma.cn/alipay-donate.png","wechatText":"微信","alipayText":"支付宝"},"favicon-absolute":{"favicon":"./img/favicon.ico","appleTouchIconPrecomposed152":"http://cos.gatesma.cn/engineer.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"gatesma","repo":"my_realm","type":"star","size":"small"}]},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"爆龙战士","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"牛马程序员","language":"zh-hans","links":{"sidebar":{"简陋的主页":"http://gatesma.cn"}},"gitbook":"3.2.3","description":"三更灯火五更鸡，正是男儿读书时"},"file":{"path":"learn-note/php/basic/advance.md","mtime":"2023-06-17T09:55:38.615Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-17T10:48:41.237Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

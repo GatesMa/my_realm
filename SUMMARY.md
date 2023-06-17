@@ -12,14 +12,17 @@
 
 ## 学习笔记
 
-* [go 学习笔记](learn-note/go/readme.md)
-  * [go 重点基础](learn-note/go/basic/readme.md)
+* [GO 学习笔记](learn-note/go/readme.md)
+  * [GO 重点基础](learn-note/go/basic/readme.md)
     * [1. Golang项目依赖Go modules](learn-note/go/basic/moudules.md)
 
-* [php 学习笔记](learn-note/php/readme.md)
-  * [php 基础](learn-note/php/basic/readme.md)
-    * [【TODO】PHP 基基基础](learn-note/php/basic/1.md)
-    * [Composer](learn-note/php/basic/composer.md)
+* [PHP 学习笔记](learn-note/php/readme.md)
+  * [PHP 基础](learn-note/php/basic/readme.md)
+    * [Composer 基本教程](learn-note/php/basic/composer.md)
+    * [PHP Composer 自动加载介绍](learn-note/php/basic/autoload.md)
+    * [PSR 规范](learn-note/php/basic/psr.md)
+    * [【TODO】PHP 基基基础](learn-note/php/basic/basic.md)
+    * [【TODO】PHP Web 框架解析、高阶](learn-note/php/basic/advance.md)
 
 ## 入门教程
 

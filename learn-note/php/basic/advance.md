@@ -17,7 +17,7 @@ https://learnku.com/articles/62233
 https://juejin.cn/post/6844904180851671054
 https://www.getyii.com/topic/697
 https://www.daijulong.com/course/composer/autoload-classmap.html
-
+https://chebincarl.github.io/2020/05/19/PHP-Composer%E8%87%AA%E5%8A%A8%E5%8A%A0%E8%BD%BD/
 
 
 
@@ -52,8 +52,7 @@ require 才能真正导入类
 
 
 
-
-
-
+从mvc谈到tp容器实现原理。门面模式、__get
+https://spaphp.pages.woa.com/chapter1_container.html
 
 

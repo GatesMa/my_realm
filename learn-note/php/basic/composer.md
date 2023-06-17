@@ -1,6 +1,8 @@
-# composer
+# Composer
 
 ## 1. composer 是什么
+
+composer是 PHP 用来管理依赖（dependency）关系的工具。你可以在自己的项目中声明所依赖的外部工具库（libraries），composer 会帮你安装这些依赖的库文件。
 
 - php 包依赖管理工具
 - 包: 组件,一组相关的类,接口,trait 的结合体

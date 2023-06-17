@@ -41,7 +41,7 @@ echo $user->getInfo();
 ```
 
 执行这个php脚本发现是报错的，提示 PHP Fatal error:  Uncaught Error: Class 'UserDemo' not found。这是因为PHP里所有外部文件都需要使用include和require方法，去把定义这个Class的文件包含进来
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 
 加载文件类似于Java中的import。
 在php里需要include和require外部php文件，这个在小规模开发的时候，没什么大问题。但在大型的开发项目中，使用这种方式会带来一些隐含的问题：如果一个PHP文件需要使用很多其它类，那么就需要很多的require/include语句，

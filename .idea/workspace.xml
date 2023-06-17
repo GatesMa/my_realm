@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06942f9c-b69f-45bf-9b6b-0694af4cb9f8" name="Changes" comment="add docs">
-      <change afterPath="$PROJECT_DIR$/learn-note/php/basic/autoload.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-note/php/basic/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-note/php/basic/psr.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-note/php/basic/img/img_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/1.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/basic.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/2.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/advance.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/composer.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/composer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/autoload.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/autoload.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/basic.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/img/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-note/php/basic/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/learn-note/php/basic/img/img_1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +95,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn-note/php/basic/img" />
       <recent name="$PROJECT_DIR$/learn-note/php/basic" />
       <recent name="$PROJECT_DIR$/learn-note/go/basic/assets" />
       <recent name="$PROJECT_DIR$/img" />
@@ -114,7 +113,7 @@
       <workItem from="1686576887311" duration="2538000" />
       <workItem from="1686621105265" duration="17113000" />
       <workItem from="1686743848076" duration="12988000" />
-      <workItem from="1686964465369" duration="8660000" />
+      <workItem from="1686964465369" duration="10323000" />
     </task>
     <servers />
   </component>

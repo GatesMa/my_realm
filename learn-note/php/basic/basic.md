@@ -15,7 +15,7 @@
 
 ### php 程序执行流程
 
-![img.png](img.png)
+![img.png](img/img.png)
 
 
 ## PHP 数据类型

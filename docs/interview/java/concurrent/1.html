@@ -1,0 +1,668 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Java 创建线程的几种方式 · 牛马程序员</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="爆龙战士">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../../tutorial/gitbook/readme.html" />
+    
+    
+    <link rel="prev" href="readme.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"gatesma","repo":"my_realm","type":"star","size":"small"}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://cos.gatesma.cn/engineer.png">
+    
+    
+        
+    
+    
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://gatesma.cn" target="_blank" class="custom-link">简陋的主页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    本书简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">学习笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../../learn-note/go/readme.html">
+            
+                <a href="../../../learn-note/go/readme.html">
+            
+                    
+                    GO 学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../../learn-note/go/basic/readme.html">
+            
+                <a href="../../../learn-note/go/basic/readme.html">
+            
+                    
+                    GO 重点基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../../learn-note/go/basic/moudules.html">
+            
+                <a href="../../../learn-note/go/basic/moudules.html">
+            
+                    
+                    1. Golang项目依赖Go modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../../learn-note/php/readme.html">
+            
+                <a href="../../../learn-note/php/readme.html">
+            
+                    
+                    PHP 学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../../../learn-note/php/basic/readme.html">
+            
+                <a href="../../../learn-note/php/basic/readme.html">
+            
+                    
+                    PHP 基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1.1" data-path="../../../learn-note/php/basic/composer.html">
+            
+                <a href="../../../learn-note/php/basic/composer.html">
+            
+                    
+                    Composer 基本教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.2" data-path="../../../learn-note/php/basic/autoload.html">
+            
+                <a href="../../../learn-note/php/basic/autoload.html">
+            
+                    
+                    PHP Composer 自动加载介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.3" data-path="../../../learn-note/php/basic/psr.html">
+            
+                <a href="../../../learn-note/php/basic/psr.html">
+            
+                    
+                    PSR 规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.4" data-path="../../../learn-note/php/basic/basic.html">
+            
+                <a href="../../../learn-note/php/basic/basic.html">
+            
+                    
+                    【TODO】PHP 基基基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.1.5" data-path="../../../learn-note/php/basic/advance.html">
+            
+                <a href="../../../learn-note/php/basic/advance.html">
+            
+                    
+                    【TODO】PHP Web 框架解析、高阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">面试相关</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../readme.html">
+            
+                <a href="../readme.html">
+            
+                    
+                    Java 面试题汇总
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    Java 并发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.1.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    Java 创建线程的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">入门教程</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../../tutorial/gitbook/readme.html">
+            
+                <a href="../../../tutorial/gitbook/readme.html">
+            
+                    
+                    gitbook 入门教程（gitbook-cli版）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Java 创建线程的几种方式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="java-&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x7684;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;">Java &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x7684;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;</h1>
+<p>&#x56DB;&#x79CD;&#x3002; &#x5206;&#x522B;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x7EE7;&#x627F; Thread &#x7C7B;</li>
+<li>&#x5B9E;&#x73B0; Runnable &#x63A5;&#x53E3;</li>
+<li>&#x5B9E;&#x73B0; Callable &#x63A5;&#x53E3;</li>
+<li>&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;</li>
+</ul>
+<blockquote>
+<p>&#x8BF4;&#x4E94;&#x79CD;&#x4E5F;&#x53EF;&#x4EE5;&#xFF0C; lambda &#x7B97;&#x4E00;&#x79CD;&#x3002;&#x56E0;&#x4E3A; Runnable &#x662F;&#x51FD;&#x6570;&#x5F0F;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5199;&#x3002;
+<strong>&#x6CE8;&#x610F;&#xFF1A;&#x4EE5;&#x4E0A;&#x56DB;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x5E95;&#x5C42;&#x90FD;&#x662F;&#x57FA;&#x4E8E; Runnable</strong></p>
+</blockquote>
+<h2 id="&#x7EE7;&#x627F;-thread-&#x7C7B;">&#x7EE7;&#x627F; Thread &#x7C7B;</h2>
+<p>&#x7EE7;&#x627F; Thread &#x7C7B;&#xFF0C;&#x91CD;&#x5199; run &#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x662F;Java&#x662F;&#x5355;&#x7EE7;&#x627F;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x7EE7;&#x627F;&#x7C7B;Thread&#x7C7B;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E0D;&#x80FD;&#x7EE7;&#x627F;&#x5176;&#x4ED6;&#x7C7B;&#x4E86;&#x3002;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewThread1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Thread running&quot;</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">new</span> NewThread1().start();
+    }
+
+}
+</code></pre>
+<h2 id="&#x5B9E;&#x73B0;-runnable-&#x63A5;&#x53E3;">&#x5B9E;&#x73B0; Runnable &#x63A5;&#x53E3;</h2>
+<p>&#x5B9E;&#x73B0; Runnable &#x63A5;&#x53E3;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6700;&#x5E38;&#x7528;&#xFF0C;Java&#x652F;&#x6301;&#x7EE7;&#x627F;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x6848;&#x7684;&#x7F3A;&#x9677;&#x3002;
+&#x5E76;&#x4E14;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x7EE7;&#x627F; Thread &#x7C7B;&#xFF0C;&#x5E95;&#x5C42;&#x4E5F;&#x662F;&#x5B9E;&#x73B0;&#x7C7B; Runnable &#x63A5;&#x53E3;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewThread2</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span> </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Thread running&quot;</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        <span class="hljs-keyword">new</span> NewThread1().start();
+        <span class="hljs-comment">// new Thread(new NewThread2()).start();</span>
+    }
+}
+</code></pre>
+<p>&#x56E0;&#x4E3A; Runnable &#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x5F0F;&#x63A5;&#x53E3;&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; lambda &#x8868;&#x8FBE;&#x5F0F;&#x7B80;&#x5316;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">new</span> Thread(() -&gt; {
+    System.out.println(<span class="hljs-string">&quot;Thread running&quot;</span>);
+}).start();
+</code></pre>
+<h2 id="&#x5B9E;&#x73B0;-callable-&#x63A5;&#x53E3;">&#x5B9E;&#x73B0; Callable &#x63A5;&#x53E3;</h2>
+<p>&#x5B9E;&#x73B0; Callable &#x63A5;&#x53E3;&#xFF0C;&#x5B9E;&#x73B0;&#x5176;&#x4E2D;&#x7684; call &#x653E;&#x65B9;&#x6CD5;&#x3002;&#x8DDF;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x6848;&#x7684;&#x5DEE;&#x522B;&#x662F;&#xFF1A;Callable &#x53EF;&#x4EE5;&#x6709;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x6267;&#x884C;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x5B83;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<ul>
+<li>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;call&#x65B9;&#x6CD5;&#x963B;&#x585E;&#x5F0F;&#x7684;&#x62FF;&#x5230;&#x7ED3;&#x679C;</li>
+<li>&#x4E5F;&#x53EF;&#x4EE5;&#x7ED3;&#x5408; FutureTask&#xFF0C;&#x5728;&#x4E4B;&#x540E;&#x62FF;&#x7ED3;&#x679C;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewThread3</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Callable</span>&lt;<span class="hljs-title">String</span>&gt; </span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">call</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        System.out.println(<span class="hljs-string">&quot;run&quot;</span>);
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Thread running&quot;</span>;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+        <span class="hljs-comment">// 1</span>
+        <span class="hljs-comment">// &#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x963B;&#x585E;&#x7684;</span>
+        String result = <span class="hljs-keyword">new</span> NewThread3().call();
+        System.out.println(result);
+
+        <span class="hljs-comment">// 2</span>
+        FutureTask&lt;String&gt; futureTask = <span class="hljs-keyword">new</span> FutureTask&lt;&gt;(<span class="hljs-keyword">new</span> NewThread3());
+        <span class="hljs-comment">// &#x5FC5;&#x987B;&#x5728; futureTask &#x6267;&#x884C;&#x4E4B;&#x540E;&#x518D;get&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x6B7B;&#x9501;</span>
+        <span class="hljs-comment">// result = futureTask.get();</span>
+        <span class="hljs-keyword">new</span> Thread(futureTask).start();
+        result = futureTask.get();
+        System.out.println(result);
+    }
+}
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;">&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6C60;</h2>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NewThread4</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Runnable</span></span>{
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+        System.out.println(<span class="hljs-string">&quot;Thread running&quot;</span>);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        ExecutorService executorService = Executors.newFixedThreadPool(<span class="hljs-number">10</span>);
+        executorService.execute(<span class="hljs-keyword">new</span> NewThread4());
+    }
+
+}
+</code></pre>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x4F7F;&#x7528; Executors &#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;&#x65F6;&#xFF0C;<strong>&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; FixedThreadPool</strong>&#x3002;&#x56E0;&#x4E3A; newFixedThreadPool &#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> ThreadPoolExecutor(nThreads, nThreads,
+          <span class="hljs-number">0L</span>, TimeUnit.MILLISECONDS,
+          <span class="hljs-keyword">new</span> LinkedBlockingQueue&lt;Runnable&gt;());
+</code></pre>
+<p>&#x521B;&#x5EFA;&#x7684;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x4E3A; LinkedBlockingQueue&#xFF0C; &#x662F;&#x4E00;&#x4E2A;&#x65E0;&#x9650;&#x7684;&#x963B;&#x585E;&#x961F;&#x5217;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x8BE5;&#x7EBF;&#x7A0B;&#x6C60;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#xFF0C;&#x5982;&#x679C;&#x4EFB;&#x52A1;&#x8FC7;&#x591A;&#x5C31;&#x4F1A;&#x4E0D;&#x65AD;&#x7684;&#x6DFB;&#x52A0;&#x5230;&#x961F;&#x5217;&#x4E2D;&#xFF0C;
+&#x4EFB;&#x52A1;&#x8D8A;&#x591A;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x5C31;&#x4F1A;&#x8D8A;&#x591A;&#xFF0C;&#x6700;&#x7EC8;&#x4F1A;&#x8017;&#x5C3D;&#x5185;&#x5B58;&#xFF0C;&#x5BFC;&#x81F4;<strong>OOM</strong>&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x7EBF;&#x7A0B;&#x6C60;&#x3001;&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x4EFB;&#x52A1;&#x961F;&#x5217;&#x3001;&#x7EBF;&#x7A0B;&#x6C60;&#x7684;&#x4E22;&#x5F03;&#x7B56;&#x7565;&#x3001;OOM&#xFF0C;&#x540E;&#x9762;&#x5199;&#x6587;&#x7AE0;&#x518D;&#x4ECB;&#x7ECD;&#x3002;</p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script>
+
+<pre><code class="lang-html">&#x4F5C;&#x8005;: &#x7206;&#x9F99;&#x6218;&#x58EB;
+&#x94FE;&#x63A5;: https://gatesma.github.io/my_realm/interview/java/concurrent/1.html
+&#x6765;&#x6E90;: &#x725B;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;
+&#x672C;&#x6587;&#x539F;&#x521B;&#x53D1;&#x5E03;&#x4E8E;&#x300C;&#x725B;&#x9A6C;&#x7A0B;&#x5E8F;&#x5458;&#x300D;,&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;,&#x8C22;&#x8C22;&#x5408;&#x4F5C;!
+</code></pre>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-06-23 12:55:24
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="readme.html" class="navigation navigation-prev " aria-label="Previous page: Java 并发">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../../tutorial/gitbook/readme.html" class="navigation navigation-next " aria-label="Next page: gitbook 入门教程（gitbook-cli版）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Java 创建线程的几种方式","level":"3.1.1.1","depth":3,"next":{"title":"gitbook 入门教程（gitbook-cli版）","level":"4.1","depth":1,"path":"tutorial/gitbook/readme.md","ref":"tutorial/gitbook/readme.md","articles":[]},"previous":{"title":"Java 并发","level":"3.1.1","depth":2,"path":"interview/java/concurrent/readme.md","ref":"interview/java/concurrent/readme.md","articles":[{"title":"Java 创建线程的几种方式","level":"3.1.1.1","depth":3,"path":"interview/java/concurrent/1.md","ref":"interview/java/concurrent/1.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["favicon-absolute","toc","github-buttons","-sharing","sharing-plus","code","advanced-emoji","copyright","donate","expandable-chapters-small","page-toc","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"copyright":{"copyProtect":false,"site":"https://gatesma.github.io/my_realm/","author":"爆龙战士","website":"牛马程序员","image":""},"toc":{"addClass":true,"className":"toc"},"search":{},"page-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4","position":"before-first","showByDefault":true},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"donate":{"title":"","button":"赏","wechat":"http://cos.gatesma.cn/wechat-donate.png","alipay":"http://cos.gatesma.cn/alipay-donate.png","wechatText":"微信","alipayText":"支付宝"},"favicon-absolute":{"favicon":"./img/favicon.ico","appleTouchIconPrecomposed152":"http://cos.gatesma.cn/engineer.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"buttons":[{"user":"gatesma","repo":"my_realm","type":"star","size":"small"}]},"expandable-chapters-small":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"爆龙战士","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"牛马程序员","language":"zh-hans","links":{"sidebar":{"简陋的主页":"http://gatesma.cn"}},"gitbook":"3.2.3","description":"三更灯火五更鸡，正是男儿读书时"},"file":{"path":"interview/java/concurrent/1.md","mtime":"2023-06-23T04:55:24.141Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-23T04:55:36.784Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copyright/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

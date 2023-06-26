@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06942f9c-b69f-45bf-9b6b-0694af4cb9f8" name="Changes" comment="add docs" />
+    <list default="true" id="06942f9c-b69f-45bf-9b6b-0694af4cb9f8" name="Changes" comment="add docs">
+      <change afterPath="$PROJECT_DIR$/interview/java/concurrent/2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview/java/concurrent/img/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview/java/concurrent/img/img_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview/java/concurrent/img/img_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview/java/concurrent/img/img_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +78,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gatesma/project/gates/my_realm/learn-note/php/basic/Chapter1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gatesma&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,

@@ -12,6 +12,11 @@
 
 ## 学习笔记
 
+* [Java 笔记](learn-note/java/readme.md)
+  * [并发](learn-note/java/concurrent/readme.md)
+    * [轻松学习java可重入锁(ReentrantLock)的实现原理](learn-note/java/concurrent/reentrantlock.md)
+    * [Java Synchronized 关键字详解](learn-note/java/concurrent/synchronized.md)
+
 * [GO 学习笔记](learn-note/go/readme.md)
   * [GO 重点基础](learn-note/go/basic/readme.md)
     * [1. Golang项目依赖Go modules](learn-note/go/basic/moudules.md)

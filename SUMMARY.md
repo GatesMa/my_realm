@@ -16,6 +16,8 @@
   * [并发](learn-note/java/concurrent/readme.md)
     * [轻松学习java可重入锁(ReentrantLock)的实现原理](learn-note/java/concurrent/reentrantlock.md)
     * [Java Synchronized 关键字详解](learn-note/java/concurrent/synchronized.md)
+    * [Monitor 的实现原理](learn-note/java/concurrent/objectmonitor.md)
+    * [ReentrantLock 可重入锁学习](learn-note/java/concurrent/reentrantlock2.md)
 
 * [GO 学习笔记](learn-note/go/readme.md)
   * [GO 重点基础](learn-note/go/basic/readme.md)

@@ -1,1 +1,8 @@
 https://javaguide.cn/java/concurrent/java-concurrent-questions-01.html
+
+
+npm install
+
+npm i gitbook-plugin-tbfed-pagefooter
+
+npm config set registry https://registry.npm.taobao.org
